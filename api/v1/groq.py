@@ -22,4 +22,8 @@ async def groq_api(args: ChatArgs, authorization: str = Header(...)):
     return await client.chat.completions.create(
         model=args.model,
         messages=args.messages,
+        stream=True  # Enable stream mode
     )
+
+
+#c2stT3lKTk43TTlHRGNNVlNpczY2RmEzOUQ2Q2E5OTQxRTI5N0U0RDg1OUE1M2MzMzkw
