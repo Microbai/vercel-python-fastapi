@@ -9,7 +9,7 @@ app = FastAPI()
 
 app.include_router(hello_router, prefix="/hello")
 app.include_router(random_router, prefix="/random")
-app.include_router(groq_router, prefix="/v1/groq")
+app.include_router(groq_router, prefix="/v1")
 
 
 @app.get("/")
